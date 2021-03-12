@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffe0; /* ページ全体の背景色 */
+    color: #000000; /* ページ全体の文字色 */
+    font-family: YuGothic,'Yu Gothic', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.mondai{
+    text-align: center;
+    background: #5375bd;
+    box-shadow: 0px 0px 0px 5px #5375bd;
+    border: dashed 1px #ffffe0;
+    padding: 0.2em 0.5em;
+    color: white;
+}
+.hazure{
+    color: #010079;
+    text-shadow: 0 0 5px white;
+    padding: 0.3em 0.5em;
+    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.riddle {
+    color: #000000; /* 問題文の文字色 */
+    font-size: 100%; /* 問題文の文字の大きさ */
+    text-align:center;
+    font-family:YuGothic,'Yu Gothic', sans-serif;
+}
+.ango {
+    color: #000000; /* 問題文の文字色 */
+    font-size: 120%; /* 問題文の文字の大きさ */
+    text-align:center;
+    font-family:YuGothic,'Yu Gothic', sans-serif;
+}
+
+.apatetic {
+    color: #ffffe0; /* 隠し文字の文字色 ページ全体の背景色と同じにする */
+}
+
+button {
+    /* はじめから つづきから Enterボタン */
+}
+
+input {
+    /* 答え入力欄 */
+}
+.help{
+	font-weight: bold;
+	text-align: left;
+}
+p.riddle img{
+	width: 50px;
+}
+div.pic img{
+	width: 50px;
+}
+p.zasetsu img{
+    width: 200px;
+}
+
+.startTitle{
+    font-size: 3em;/* フォントサイズ */
+    font-weight: bold;/* フォント太さ */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-top: 3px solid ;/* 上の線 */
+    border-bottom: 3px solid ;/* 下の線 */
+    text-align: center;/* テキストの位置 */
+    font-family: 'Impact';
+}
+.startButton{
+    text-align: center;
+}
+.rcc_start {
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+    border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+  }
+.rcc_start:before {  
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+.rcc_start:after {  
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+.rcc_start:active {
+    /*ボタンを押したとき*/
+    border:none;
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+.rcc_start:active:after, .rcc_start:active:before {
+    content: none;/*ボタンを押すと線が消える*/
+}
+.center{
+    text-align: center;
+}
+.marquee {
+    overflow:hidden;
+    margin:0;
+    padding:0.2em 0;
+    background:#333;
+}
+.marquee img {
+    width:100%;
+    display:inline-block;
+    white-space:nowrap;
+    color:#fff;
+    -moz-animation-name:marquee;
+    -moz-animation-duration:20s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -webkit-animation-name:marquee;
+    -webkit-animation-duration:20s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -o-animation-name:marquee;
+    -o-animation-duration:20s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    animation-name:marquee;
+    animation-duration:20s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+    from {margin-left:100%; width:100%;}
+    to {margin-left:-100%; width:100%;}
+}
+@-moz-keyframes marquee {
+    from {margin-left:100%; width:100%;}
+    to {margin-left:-100%; width:100%;}
+}
+@-o-keyframes marquee {
+    from {margin-left:100%; width:100%;}
+    to {margin-left:-100%; width:100%;}
+}
+@keyframes marquee {
+    from {margin-left:100%; width:100%;}
+    to {margin-left:-100%; width:100%;}
+}
